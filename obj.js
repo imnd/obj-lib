@@ -1,15 +1,15 @@
 /**
- * Набор методов-шорткатов
+ * A set of shortcut methods
  *
- * @constructor
- * @this  {obj}
+ * @author Андрей Сердюк
+ * @copyright (c) 2023 IMND
  */
-const obj = {
-    isArray: obj => obj.constructor === Array,
-    isObject: obj => obj.constructor === Object,
-    inArray: (arr, elem) => arr.indexOf(elem) !== -1,
-    inObject: (obj, elem) => obj[elem] !== undefined,
-    arrayKey: (arr, elem) => arr.indexOf(elem),
-};
+const
+  isArray = obj => obj.constructor === Array,
+  isObject = obj => obj.constructor === Object,
+  inArray = (arr, elem) => arr.indexOf(elem) !== -1,
+  inObject = (obj, elem) => obj[elem] !== undefined,
+  arrayKey = (arr, elem) => arr.indexOf(elem)
+;
 
-export default obj;
+export {isArray, isObject, inArray, inObject, arrayKey};
